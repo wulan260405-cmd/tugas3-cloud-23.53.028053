@@ -1,35 +1,95 @@
 
-/* TEMA VERSI 2 - PINK PASTEL */
+/* ===== TEMA SOFT PINK VERSI 2 ===== */
+
+:root {
+    --pink-main: #FFE4E1;
+    --pink-light: #FFF5F4;
+    --pink-soft: #F8C8C8;
+    --pink-medium: #E8A0A8;
+    --pink-dark: #B76E79;
+    --text-dark: #65474B;
+    --white: #FFFFFF;
+}
 
 body {
-    background-color: #fff8f7;
+    background-color: var(--pink-light) !important;
+    color: var(--text-dark);
 }
 
+/* NAVBAR */
 .navbar {
-    background-color: #ffe4e1 !important;
+    background-color: var(--pink-main) !important;
 }
 
-.navbar .navbar-brand,
+.navbar-brand,
 .navbar .nav-link {
-    color: #663f43 !important;
+    color: var(--text-dark) !important;
+    font-weight: 600;
 }
 
 .navbar .nav-link:hover {
-    color: #c06f7a !important;
+    color: var(--pink-dark) !important;
 }
 
+/* HERO / BAGIAN UTAMA */
+.hero,
+header {
+    background-color: var(--pink-main);
+    color: var(--text-dark);
+}
+
+/* SECTION */
+section {
+    background-color: var(--pink-light);
+}
+
+/* CARD */
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--pink-soft);
+    border-radius: 15px;
+    color: var(--text-dark);
+    box-shadow: 0 4px 12px rgba(183, 110, 121, 0.10);
+}
+
+.card-title {
+    color: var(--pink-dark);
+}
+
+/* TOMBOL */
 .btn-primary {
-    background-color: #d98c95;
-    border-color: #d98c95;
-    color: white;
+    background-color: var(--pink-medium) !important;
+    border-color: var(--pink-medium) !important;
+    color: var(--white) !important;
 }
 
 .btn-primary:hover {
-    background-color: #bd707b;
-    border-color: #bd707b;
+    background-color: var(--pink-dark) !important;
+    border-color: var(--pink-dark) !important;
 }
 
+/* LINK */
+a {
+    color: var(--pink-dark);
+}
+
+a:hover {
+    color: #98545E;
+}
+
+/* FOOTER */
 footer {
-    background-color: #ffe4e1;
-    color: #663f43;
+    background-color: var(--pink-main) !important;
+    color: var(--text-dark) !important;
+}
+
+/* FORM */
+.form-control {
+    border: 1px solid var(--pink-soft);
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--pink-medium);
+    box-shadow: 0 0 0 0.2rem rgba(232, 160, 168, 0.20);
 }
