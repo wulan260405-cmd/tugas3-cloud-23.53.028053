@@ -93,3 +93,15 @@ footer {
     border-color: var(--pink-medium);
     box-shadow: 0 0 0 0.2rem rgba(232, 160, 168, 0.20);
 }
+
+/* UKURAN FOTO PROFIL */
+.profile-img,
+.profile-photo,
+.hero img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
