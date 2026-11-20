@@ -1,136 +1,35 @@
-/* DASAR */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+
+/* TEMA VERSI 2 - PINK PASTEL */
 
 body {
-  background: #f4f7fb;
-  color: #263248;
+    background-color: #fff8f7;
 }
 
-/* NAVBAR */
-.navbar-custom {
-  background: #173b67;
-  padding: 18px 0;
+.navbar {
+    background-color: #ffe4e1 !important;
 }
 
-.navbar-custom .navbar-brand {
-  color: white;
-  font-size: 23px;
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #663f43 !important;
 }
 
-.navbar-custom .nav-link {
-  color: white;
-  margin-left: 15px;
-  transition: 0.3s;
+.navbar .nav-link:hover {
+    color: #c06f7a !important;
 }
 
-.navbar-custom .nav-link:hover,
-.navbar-custom .nav-link.active {
-  color: #8dd8ff;
+.btn-primary {
+    background-color: #d98c95;
+    border-color: #d98c95;
+    color: white;
 }
 
-/* HERO */
-.hero {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
-  text-align: center;
+.btn-primary:hover {
+    background-color: #bd707b;
+    border-color: #bd707b;
 }
 
-.foto-profil {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid white;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  margin-bottom: 25px;
-}
-
-.hero h1 {
-  color: #173b67;
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.hero h3 {
-  color: #3285b9;
-  font-size: 21px;
-  margin-bottom: 20px;
-}
-
-.deskripsi {
-  max-width: 750px;
-  margin: 0 auto 30px;
-  line-height: 1.9;
-  color: #64748b;
-  font-size: 16px;
-}
-
-/* TOMBOL */
-.btn-primary-custom {
-  background: #173b67;
-  color: white;
-  padding: 13px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-primary-custom:hover {
-  background: #3285b9;
-  color: white;
-  transform: translateY(-3px);
-}
-
-/* INFORMASI */
-.info {
-  background: white;
-  padding: 40px 20px;
-}
-
-.info h2 {
-  color: #173b67;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.info p {
-  color: #64748b;
-  line-height: 1.8;
-}
-
-/* FOOTER */
 footer {
-  background: #ffe4e1;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .foto-profil {
-    width: 155px;
-    height: 155px;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .hero h3 {
-    font-size: 18px;
-  }
-
-  .deskripsi {
-    font-size: 14px;
-  }
+    background-color: #ffe4e1;
+    color: #663f43;
 }
