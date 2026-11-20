@@ -1,107 +1,137 @@
 
-/* ===== TEMA SOFT PINK VERSI 2 ===== */
-
-:root {
-    --pink-main: #FFE4E1;
-    --pink-light: #FFF5F4;
-    --pink-soft: #F8C8C8;
-    --pink-medium: #E8A0A8;
-    --pink-dark: #B76E79;
-    --text-dark: #65474B;
-    --white: #FFFFFF;
+/* DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: var(--pink-light) !important;
-    color: var(--text-dark);
+  background: #fff8f7;
+  color: #65474b;
 }
 
 /* NAVBAR */
-.navbar {
-    background-color: var(--pink-main) !important;
+.navbar-custom {
+  background: #ffe4e1;
+  padding: 18px 0;
 }
 
-.navbar-brand,
-.navbar .nav-link {
-    color: var(--text-dark) !important;
-    font-weight: 600;
+.navbar-custom .navbar-brand {
+  color: #65474b;
+  font-size: 23px;
 }
 
-.navbar .nav-link:hover {
-    color: var(--pink-dark) !important;
+.navbar-custom .nav-link {
+  color: #65474b;
+  margin-left: 15px;
+  transition: 0.3s;
 }
 
-/* HERO / BAGIAN UTAMA */
-.hero,
-header {
-    background-color: var(--pink-main);
-    color: var(--text-dark);
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: #b76e79;
 }
 
-/* SECTION */
-section {
-    background-color: var(--pink-light);
+/* HERO */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-/* CARD */
-.card {
-    background-color: var(--white);
-    border: 1px solid var(--pink-soft);
-    border-radius: 15px;
-    color: var(--text-dark);
-    box-shadow: 0 4px 12px rgba(183, 110, 121, 0.10);
+.foto-profil {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 5px 20px rgba(183, 110, 121, 0.15);
+  margin-bottom: 25px;
 }
 
-.card-title {
-    color: var(--pink-dark);
+.hero h1 {
+  color: #b76e79;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h3 {
+  color: #d98c95;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.deskripsi {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  line-height: 1.9;
+  color: #8b7376;
+  font-size: 16px;
 }
 
 /* TOMBOL */
-.btn-primary {
-    background-color: var(--pink-medium) !important;
-    border-color: var(--pink-medium) !important;
-    color: var(--white) !important;
+.btn-primary-custom {
+  background: #d98c95;
+  color: white;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: var(--pink-dark) !important;
-    border-color: var(--pink-dark) !important;
+.btn-primary-custom:hover {
+  background: #b76e79;
+  color: white;
+  transform: translateY(-3px);
 }
 
-/* LINK */
-a {
-    color: var(--pink-dark);
+/* INFORMASI */
+.info {
+  background: #fff5f4;
+  padding: 40px 20px;
 }
 
-a:hover {
-    color: #98545E;
+.info h2 {
+  color: #b76e79;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.info p {
+  color: #8b7376;
+  line-height: 1.8;
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--pink-main) !important;
-    color: var(--text-dark) !important;
+  background: #ffe4e1;
+  color: #65474b;
+  text-align: center;
+  padding: 20px;
 }
 
-/* FORM */
-.form-control {
-    border: 1px solid var(--pink-soft);
-    border-radius: 8px;
-}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .foto-profil {
+    width: 155px;
+    height: 155px;
+  }
 
-.form-control:focus {
-    border-color: var(--pink-medium);
-    box-shadow: 0 0 0 0.2rem rgba(232, 160, 168, 0.20);
-}
+  .hero h1 {
+    font-size: 30px;
+  }
 
-/* UKURAN FOTO PROFIL */
-.profile-img,
-.profile-photo,
-.hero img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  .deskripsi {
+    font-size: 14px;
+  }
 }
